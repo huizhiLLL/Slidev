@@ -5,6 +5,7 @@
 **/.vite/
 **/exports/
 **/.cache/
+**/.wrangler/
 *.log
 *.tsbuildinfo
 

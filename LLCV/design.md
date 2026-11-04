@@ -87,7 +87,7 @@ AssetFrame 负责真实图片和缺图占位；ResearchFlow 与 ResearchRoadmap 
 
 根目录 Slidev/ 建立一个 Git 仓库，子项目不放 .git。理由是这里要成为幻灯片集合，统一历史、忽略规则和项目目录更适合日常维护；只有需要完全独立权限与发布历史时才拆仓库。
 
-当前采用独立子项目，暂不引入 workspace、共享主题包或复杂 monorepo 工具。每个项目有自己的 package.json 和锁文件，可独立安装、运行和迁移；根 package.json 仅提供常用命令入口，无额外依赖。多个项目出现稳定的公共规范后再抽取共享主题。
+当前采用独立子项目，暂不引入 workspace、共享主题包或复杂 monorepo 工具。每个项目有自己的 package.json 和锁文件，可独立安装、运行和迁移；根 package.json 提供常用命令与集合构建入口，无额外前端框架依赖。多个项目出现稳定的公共规范后再抽取共享主题。
 
 ```text
 Slidev/
@@ -110,7 +110,7 @@ Slidev/
     scripts/
 ```
 
-本地初始化 Git，不创建远端、不推送、不代做首次提交。忽略 node_modules、dist、导出产物和缓存，保留源文件、锁文件、设计与必要静态资产。
+集合统一使用公开 GitHub 仓库 Slidev，集合导航页和 Cloudflare Pages 部署设计见根 design.md。忽略 node_modules、dist、导出产物和缓存，保留源文件、锁文件、设计与必要静态资产。
 
 ## 9. 验证与交付边界
 

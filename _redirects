@@ -1,0 +1,10 @@
+# More specific deck paths must precede the main deck's page fallback.
+# Use canonical directory targets: index.html would trigger a 308 and lose the slide path.
+/llcv /llcv/ 301
+/llcv/appendix /llcv/appendix/ 301
+/llcv/appendix/presenter/:slide /llcv/appendix/ 200
+/llcv/appendix/export/:slide /llcv/appendix/ 200
+/llcv/appendix/:page /llcv/appendix/ 200
+/llcv/presenter/:slide /llcv/ 200
+/llcv/export/:slide /llcv/ 200
+/llcv/:page /llcv/ 200

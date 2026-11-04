@@ -28,10 +28,12 @@ npm run dev:appendix
 ```powershell
 npm run check
 npm run build
-npm --prefix LLCV run preview
+npm run preview
 ```
 
-`LLCV/dist/main/` 与 `LLCV/dist/appendix/` 分别是主体和备用静态站点。`preview:appendix` 可预览备用站点。当前按独立站点根路径构建；若将来部署到子路径，在相应 build 命令中传入 `--base /实际路径/` 后重新构建。
+在集合根目录执行 `npm run build` 时，会分别以 `/llcv/` 和 `/llcv/appendix/` 为 base 构建到 LLCV/dist/main/、LLCV/dist/appendix/，随后复制到集合 dist/ 中的对应路径。Cloudflare Pages 使用集合的 dist/，配置见根 README。
+
+在 LLCV 目录单独执行 `npm run build` 仍可构建两个独立站点，`preview` 与 `preview:appendix` 用于这些独立构建的预览。不要用它们预览带集合 base 的产物；集合构建请在根目录执行 `npm run preview`。
 
 ## 图片替换
 

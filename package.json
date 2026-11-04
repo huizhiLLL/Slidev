@@ -1,11 +1,17 @@
 {
   "name": "slidev-collection",
   "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
   "scripts": {
     "dev": "npm --prefix LLCV run dev",
     "dev:appendix": "npm --prefix LLCV run dev:appendix",
-    "build": "npm --prefix LLCV run build",
+    "build": "node scripts/build.mjs",
+    "preview": "npx --yes wrangler@4 pages dev dist",
     "check": "npm --prefix LLCV run check",
+    "check:site": "node scripts/check-site.mjs",
     "export": "npm --prefix LLCV run export",
     "export:appendix": "npm --prefix LLCV run export:appendix"
   }
