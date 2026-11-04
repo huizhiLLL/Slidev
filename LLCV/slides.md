@@ -252,11 +252,9 @@ title: 计划安排与预期成果
     <div><dt>方法</dt><dd>局部视觉观测、合法状态推断与公式匹配方法</dd></div>
     <div><dt>系统</dt><dd>完善 cuberoot.me Web 工具，<span class="green">现有入口已接入</span></dd></div>
     <div><dt>应用</dt><dd>AstrBot WCA 插件<span class="green">（已接入并验收）</span> / MCP · Agent 接口<span class="orange">（后续拓展）</span></dd></div>
-    <div><dt>研究记录</dt><dd>真实测试样本、失败案例、实验记录与 SITP 研究报告</dd></div>
   </dl>
 </div>
 
-<p class="closing-line">以可运行原型为起点，用可复现的测试记录评价可靠性。</p>
 <DeckFooter page="07" />
 
 <!--

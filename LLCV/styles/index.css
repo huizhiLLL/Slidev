@@ -260,7 +260,6 @@
 .deliverables dl > div { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 12px; font-size: 21px; line-height: 1.5; }
 .deliverables dt { color: var(--muted); }
 .deliverables dd { margin: 0; }
-.slidev-layout .closing-line { margin-top: 18px; font-family: var(--title-font); font-size: 24px; line-height: 1.4; }
 
 .thanks-layout { display: grid; place-items: center; height: 522px; }
 .slidev-layout .thanks-title { font-size: 88px; line-height: 1.2; }
