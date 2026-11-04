@@ -82,6 +82,7 @@
 
 .slidev-layout strong { font-weight: 600; }
 .slidev-layout .eyebrow {
+  max-width: calc(100% - 210px);
   margin-bottom: 12px;
   color: var(--muted);
   font-size: 15px;
@@ -93,6 +94,16 @@
 .green { color: var(--green); }
 .orange { color: var(--orange); }
 .red { color: var(--red); }
+
+.school-logo {
+  position: absolute;
+  top: 24px;
+  right: 64px;
+  width: 180px;
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+}
 
 .deck-footer {
   position: absolute;
@@ -146,7 +157,7 @@
 .slidev-layout .cover-title { font-size: 45px; line-height: 1.55; letter-spacing: -0.015em; }
 .slidev-layout .cover-description { margin-top: 29px; font-size: 24px; line-height: 1.65; }
 .slidev-layout .cover-fields { margin-top: 39px; color: var(--muted); font-size: 16px; }
-.cover-photo { width: 382px; height: 466px; justify-self: end; }
+.cover-photo { width: 382px; height: 466px; justify-self: end; align-self: end; }
 
 .observation-layout { display: grid; grid-template-columns: 508px 1fr; gap: 60px; margin-top: 29px; }
 .observation-visual .asset-frame { width: 350px; height: 350px; margin-inline: auto; }

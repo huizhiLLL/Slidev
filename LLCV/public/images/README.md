@@ -7,3 +7,5 @@
 3. prototype-overview.png：cuberoot.me 拍照查公式完整截图，1801 × 1374，用于第五页，合并原来的三个截图位置。
 
 素材通过 LLCV/assets.ts 引用，页面使用 contain 完整显示，不裁切公式或重画识别结果。文件缺失或加载失败时回退到文字占位。
+
+tongji-university.png 为用户提供的同济大学校徽，原图 1768 × 461，带透明通道。由 DeckFooter 统一放置于主体和备用页右上角，保留原始颜色、比例与透明背景。
