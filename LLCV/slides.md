@@ -32,9 +32,9 @@ layout: default
   <div class="cover-visual">
     <AssetFrame name="input" class="cover-photo" />
     <div class="cover-prompts" lang="en" aria-hidden="true">
-      <span class="prompt-case">Which case?</span>
-      <span class="prompt-alg">Which alg?</span>
-      <span class="prompt-how">How to do it?</span>
+      <span>Which case?</span>
+      <span>Which alg?</span>
+      <span>How to do it?</span>
     </div>
   </div>
 </div>
