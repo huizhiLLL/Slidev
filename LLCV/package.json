@@ -1,0 +1,28 @@
+{
+  "name": "llcv-sitp-slides",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "slidev slides.md --port 3030",
+    "dev:appendix": "slidev appendix.md --port 3031",
+    "build:main": "slidev build slides.md --out dist/main",
+    "build:appendix": "slidev build appendix.md --out dist/appendix",
+    "build": "npm run build:main && npm run build:appendix",
+    "preview": "vite preview --outDir dist/main --port 3030",
+    "preview:appendix": "vite preview --outDir dist/appendix --port 3031",
+    "check": "node scripts/check.mjs",
+    "export": "slidev export slides.md --output exports/LLCV-SITP.pdf",
+    "export:appendix": "slidev export appendix.md --output exports/LLCV-appendix.pdf"
+  },
+  "devDependencies": {
+    "@slidev/cli": "53.0.0",
+    "@slidev/parser": "53.0.0",
+    "@slidev/theme-default": "0.25.0",
+    "katex": "0.18.10",
+    "vue": "^3.5.0"
+  }
+}
