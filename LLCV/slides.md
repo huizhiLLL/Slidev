@@ -2,7 +2,7 @@
 theme: default
 title: 基于单帧斜视图像的三阶魔方局部状态推断与公式匹配方法研究
 info: |
-  SITP 立项汇报。内容依据研究总纲第 14 章，7 页主体。
+  SITP 申报汇报。内容依据研究总纲第 14 章，7 页主体。
 author: ''
 lang: zh-CN
 colorSchema: light
@@ -24,7 +24,7 @@ layout: default
 
 <div class="cover-layout">
   <div class="cover-copy">
-    <p class="eyebrow">SITP 立项汇报</p>
+    <p class="eyebrow">SITP 申报汇报</p>
     <h1 class="cover-title">基于单帧斜视图像的<br>三阶魔方局部状态推断<br>与公式匹配方法研究</h1>
     <p class="cover-description">从一张照片的有限可见信息中，<br>推断可能状态，匹配适用公式。</p>
     <p class="cover-fields">计算机视觉 / 图像处理 / 结构化状态推理</p>

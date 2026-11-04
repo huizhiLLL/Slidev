@@ -4,7 +4,7 @@
 
 | 项目 | 说明 | 入口 |
 | --- | --- | --- |
-| [LLCV](./LLCV/) | 魔方视觉识别 SITP 立项汇报，7 页主体，5 页独立备用页 | `/llcv/` · [使用说明](./LLCV/README.md) · [设计规范](./LLCV/design.md) |
+| [LLCV](./LLCV/) | 魔方视觉识别 SITP 申报汇报，7 页主体，5 页独立备用页 | `/llcv/` · [使用说明](./LLCV/README.md) · [设计规范](./LLCV/design.md) |
 
 ## 运行 LLCV
 
