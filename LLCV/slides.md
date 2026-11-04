@@ -63,9 +63,9 @@ title: 一张照片中的有限观测
     <AssetFrame name="observation" />
   </div>
   <div class="observation-copy">
-    <p class="observation-demand">玩家通过照片交流，能否直接查公式？</p>
+    <p class="observation-demand">面对种类繁杂的公式库，如何快捷查询？</p>
     <div class="query-comparison">
-      <p><span>人工查询</span>辨认情况 / 转动魔方逐面录入 → 查表</p>
+      <p><span>一般场景</span>人工辨认情况查表 / 社区询问</p>
       <p><strong class="blue">本项目</strong>单张斜视照片 → 局部状态 → 适用公式</p>
     </div>
     <div class="observation-equation" aria-label="顶面九格，加两个侧面顶行各三格，共十五格">
