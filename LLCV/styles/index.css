@@ -253,17 +253,20 @@
 .evaluation-table td { padding: 8px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
 .slidev-layout .evaluation-conditions { margin-top: 12px; color: var(--muted); font-size: 17px; line-height: 1.5; }
 
-.slidev-layout .project-timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; margin-top: 40px; padding: 0; list-style: none; }
-.project-timeline li { position: relative; padding-top: 22px; border-top: 1px solid #a8afb6; }
+.slidev-layout .project-timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; margin-top: 26px; padding: 0; list-style: none; }
+.project-timeline li { position: relative; padding-top: 16px; border-top: 1px solid #a8afb6; }
 .project-timeline li::before { content: ''; position: absolute; top: -4px; left: 0; width: 7px; height: 7px; background: var(--ink); }
-.phase { display: block; margin-bottom: 12px; font-size: 18px; }
-.project-timeline strong { display: block; margin-bottom: 12px; font-size: 25px; }
-.project-timeline p { color: var(--muted); font-size: 20px; line-height: 1.7; }
-.deliverables { display: grid; grid-template-columns: 170px 1fr; gap: 24px; margin-top: 36px; padding-top: 25px; border-top: 1px solid var(--rule); }
-.deliverables h2 { padding-top: 2px; font-size: 23px; }
-.deliverables p { font-size: 21px; line-height: 1.8; }
-.deliverables strong { display: inline-block; width: 112px; font-weight: 400; color: var(--muted); }
-.slidev-layout .closing-line { position: absolute; bottom: 80px; font-family: var(--title-font); font-size: 25px; }
+.phase { display: block; margin-bottom: 8px; font-size: 18px; line-height: 1.4; }
+.project-timeline strong { display: block; margin-bottom: 8px; font-size: 24px; line-height: 1.4; }
+.project-timeline p { font-size: 21px; line-height: 1.5; }
+.project-timeline small { display: block; margin-top: 10px; color: var(--muted); font-size: 17px; line-height: 1.5; }
+.deliverables { display: grid; grid-template-columns: 128px minmax(0, 1fr); gap: 24px; margin-top: 24px; padding-top: 18px; border-top: 1px solid var(--rule); }
+.slidev-layout .deliverables h2 { font-size: 23px; }
+.deliverables dl { display: grid; gap: 6px; }
+.deliverables dl > div { display: grid; grid-template-columns: 88px minmax(0, 1fr); gap: 12px; font-size: 21px; line-height: 1.5; }
+.deliverables dt { color: var(--muted); }
+.deliverables dd { margin: 0; }
+.slidev-layout .closing-line { margin-top: 18px; font-family: var(--title-font); font-size: 24px; line-height: 1.4; }
 
 .slidev-layout .appendix-lead { margin-top: 25px; color: var(--muted); font-size: 21px; }
 .theory-layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 65px; margin-top: 40px; }

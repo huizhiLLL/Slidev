@@ -245,15 +245,20 @@ title: 计划安排与预期成果
 <h1>计划安排与预期成果</h1>
 
 <ol class="project-timeline">
-  <li><span class="phase blue">前期</span><strong>梳理基础</strong><p>相关研究与原型<br>输入条件与测试标准</p></li>
-  <li><span class="phase green">中期</span><strong>完善方法</strong><p>优化传统视觉<br>候选状态与公式验证</p></li>
-  <li><span class="phase orange">后期</span><strong>测试与探索</strong><p>记录效果与失败类型<br>视瓶颈探索学习定位</p></li>
-  <li><span class="phase red">结题</span><strong>整理成果</strong><p>实验结果与应用演示<br>SITP 研究报告</p></li>
+  <li><span class="phase blue">01 / 前期</span><strong>梳理基础</strong><p>文献与原型分析<br>明确输入与测试标准</p><small>输出：输入 / 测试规范</small></li>
+  <li><span class="phase green">02 / 中期</span><strong>完善方法</strong><p>传统视觉优化<br>状态约束与公式验证</p><small>输出：改进模块与记录</small></li>
+  <li><span class="phase orange">03 / 后期</span><strong>测试与探索</strong><p>真实样本可靠性评价<br>必要时探索学习定位</p><small>输出：测试与失败分析</small></li>
+  <li><span class="phase red">04 / 结题</span><strong>整合演示</strong><p>系统整合与应用演示<br>研究总结与报告</p><small>输出：工具与 SITP 报告</small></li>
 </ol>
 
 <div class="deliverables">
   <h2>预期交付</h2>
-  <div><p><strong>完整方法</strong>局部观测、状态约束推断与公式匹配</p><p><strong>应用工具</strong>完善 Web，计划接入 AstrBot 群聊插件</p><p><strong>研究记录</strong>覆盖不同拍摄条件的样本、错误与拒识记录、研究报告</p></div>
+  <dl>
+    <div><dt>方法</dt><dd>局部视觉观测、合法状态推断与公式匹配方法</dd></div>
+    <div><dt>系统</dt><dd>完善 cuberoot.me Web 工具，<span class="green">现有入口已接入</span></dd></div>
+    <div><dt>应用</dt><dd>AstrBot WCA 群聊插件<span class="orange">（计划接入）</span><br>MCP / Agent 专用识别接口<span class="orange">（后续拓展）</span></dd></div>
+    <div><dt>研究记录</dt><dd>真实测试样本、失败案例、实验记录与 SITP 研究报告</dd></div>
+  </dl>
 </div>
 
 <p class="closing-line">以可运行原型为起点，用可复现的测试记录评价可靠性。</p>
@@ -262,7 +267,7 @@ title: 计划安排与预期成果
 <!--
 用时：40 秒。累计：7:00。
 
-计划按前期、中期、后期和结题推进，具体日期随学校周期调整。先梳理研究与原型，明确测试标准；再优化传统视觉和状态约束；之后开展样本测试，并根据实际瓶颈决定是否探索学习定位。预期交付包括完整的方法、完善后的 Web 与计划接入的群聊入口，以及测试记录和研究报告。评价会记录识别成功情况、错误类型和拒识，暂不承诺没有证据支持的准确率数字。我的汇报到这里，谢谢各位老师。
+四个阶段各有明确输出：前期确定输入和测试规范，中期留下改进模块及记录，后期形成真实样本测试和失败分析，结题整合工具、演示和 SITP 报告。具体日期随学校周期安排。交付区分方法、系统、应用和研究记录：Web 是已有入口，继续完善；AstrBot WCA 是计划接入；MCP 或 Agent 专用接口只是总纲已有的后续应用展望，不作为本期核心研究承诺。项目以可运行原型为起点，用可复现记录评价可靠性，谢谢各位老师。
 
-内容依据：研究总纲第 14.2 节第 7 页。主体结束。答辩备用页使用 appendix.md 独立入口，不计入这七页或七分钟。
+内容依据：研究总纲第 14.2 节第 7 页；MCP / Agent 仅沿用第 4 章应用拓展背景。主体结束，答辩备用页使用 appendix.md 独立入口，不计入七页主体或主讲时间。
 -->
