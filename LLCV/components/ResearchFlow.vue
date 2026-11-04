@@ -1,18 +1,31 @@
 <script setup lang="ts">
-const stages = [
-  { number: '01', title: '斜视照片', subtitle: '标准三阶 · F2L 已复原', color: 'blue' },
-  { number: '02', title: '15 格观测', subtitle: '几何定位 · 透视与颜色', color: 'orange' },
-  { number: '03', title: '合法候选状态', subtitle: '角块 · 棱块 · 状态约束', color: 'green' },
-  { number: '04', title: '适用公式', subtitle: '按目标逐候选模拟验证', color: 'red' },
-]
+import MathBlock from './MathBlock.vue'
 </script>
 
 <template>
-  <ol class="research-flow" aria-label="技术流程：斜视照片、15 格观测、合法候选状态、适用公式">
-    <li v-for="stage in stages" :key="stage.number" :class="stage.color">
-      <span class="flow-number">{{ stage.number }}</span>
-      <strong>{{ stage.title }}</strong>
-      <span class="flow-detail">{{ stage.subtitle }}</span>
-    </li>
-  </ol>
+  <div class="research-flow" aria-label="视觉感知、Cubie 合法候选推断、公式匹配与模拟验证三层技术流程">
+    <section class="flow-stage blue">
+      <span class="flow-number">01 / Computer Vision</span>
+      <h2>视觉感知</h2>
+      <p>图像预处理 · 边缘 / 直线<br>几何网格 / 角点 → 透视变换<br>色块采样 → 颜色分类</p>
+      <span class="flow-output">输出：15 格颜色观测</span>
+    </section>
+    <section class="flow-stage green">
+      <span class="flow-number">02 / State Inference</span>
+      <h2>局部状态推断</h2>
+      <p>颜色 → <strong>Corner / Edge Cubies</strong></p>
+      <div class="flow-constraints">
+        <MathBlock expression="\sum_i \mathrm{twist}_i \equiv 0 \pmod{3}" />
+        <MathBlock expression="\sum_i \mathrm{flip}_i \equiv 0 \pmod{2}" />
+        <span>角块与棱块排列奇偶性一致</span>
+      </div>
+      <span class="flow-output">输出：合法候选集合 C</span>
+    </section>
+    <section class="flow-stage orange">
+      <span class="flow-number">03 / Algorithm Matching</span>
+      <h2>公式匹配与验证</h2>
+      <p>查询公式库 · 对齐持握 / AUF<br>确定公式体系目标<br><strong>同一公式，逐候选模拟执行</strong></p>
+      <span class="flow-output">输出：共同适用公式 / 歧义提示</span>
+    </section>
+  </div>
 </template>

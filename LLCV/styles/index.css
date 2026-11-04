@@ -191,16 +191,24 @@
 .input-priors dd { margin: 0; font-size: 20px; line-height: 1.65; }
 .slidev-layout .boundary-note { position: absolute; left: 64px; right: 64px; bottom: 78px; color: var(--muted); font-size: 18px; line-height: 1.55; }
 
-.slidev-layout .research-flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; padding: 0; margin-top: 45px; list-style: none; }
-.research-flow li { position: relative; padding: 14px 0 20px; border-top: 2px solid currentColor; }
-.research-flow li:not(:last-child)::after { content: '→'; position: absolute; top: 49px; right: -24px; color: #899099; font-size: 24px; }
-.flow-number { display: block; margin-bottom: 17px; font-size: 18px; line-height: 1; font-variant-numeric: tabular-nums; }
-.research-flow strong { display: block; color: var(--ink); font-size: 27px; }
-.flow-detail { display: block; margin-top: 12px; color: var(--muted); font-size: 18px; }
-.principle-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; margin-top: 22px; padding-top: 24px; border-top: 1px solid var(--rule); }
-.principle-layout p { margin-top: 14px; font-size: 22px; line-height: 1.65; }
-.slidev-layout .small-detail { margin-top: 15px; font-size: 17px; color: var(--muted); }
-.slidev-layout .takeaway { position: absolute; bottom: 80px; color: var(--ink); font-size: 23px; }
+/* Three layers share a baseline; arrows connect their outputs, without card containers. */
+.research-flow { display: grid; grid-template-columns: 1fr 1.08fr 1fr; gap: 32px; margin-top: 24px; }
+.flow-stage { position: relative; padding-top: 11px; border-top: 2px solid currentColor; }
+.flow-stage:not(:last-child)::after { content: '→'; position: absolute; right: -26px; top: 63px; color: #899099; font-size: 23px; }
+.flow-number { display: block; margin-bottom: 7px; font-size: 16px; line-height: 1.4; }
+.slidev-layout .flow-stage h2 { color: var(--ink); font-size: 26px; }
+.slidev-layout .flow-stage p { margin-top: 10px; color: var(--ink); font-size: 20px; line-height: 1.65; }
+.flow-output { display: block; margin-top: 11px; font-size: 17px; line-height: 1.4; color: var(--muted); }
+.flow-constraints { margin-top: 7px; color: var(--ink); font-size: 20px; }
+.flow-constraints .katex-display { margin: 3px 0; text-align: left; font-size: 20px; line-height: 1.4; }
+.flow-constraints .katex-display > .katex { text-align: left; }
+.flow-constraints > span { display: block; margin-top: 6px; font-size: 19px; }
+.principle-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 42px; margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--rule); }
+.slidev-layout .principle-layout h2 { font-size: 25px; }
+.slidev-layout .principle-layout p { margin-top: 10px; font-size: 21px; line-height: 1.65; }
+.slidev-layout .small-detail { margin-top: 12px; font-size: 17px; color: var(--muted); }
+.goal-validation .katex-display { margin: 8px 0 5px; font-size: 23px; }
+.slidev-layout .goal-validation .goal-legend { margin-top: 5px; color: var(--muted); font-size: 18px; line-height: 1.6; }
 
 .slidev-layout .research-table { width: 100%; margin-top: 30px; border-collapse: collapse; font-size: 22px; line-height: 1.5; }
 .research-table th { padding: 0 0 12px; text-align: left; color: var(--muted); font-size: 17px; font-weight: 400; border-bottom: 1px solid var(--rule); }
