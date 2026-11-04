@@ -29,7 +29,14 @@ layout: default
     <p class="cover-description">从一张照片的有限可见信息中，<br>推断可能状态，匹配适用公式。</p>
     <p class="cover-fields">计算机视觉 / 图像处理 / 结构化状态推理</p>
   </div>
-  <AssetFrame name="input" class="cover-photo" />
+  <div class="cover-visual">
+    <AssetFrame name="input" class="cover-photo" />
+    <div class="cover-prompts" lang="en" aria-hidden="true">
+      <span class="prompt-case">Which case?</span>
+      <span class="prompt-alg">Which alg?</span>
+      <span class="prompt-how">How to do it?</span>
+    </div>
+  </div>
 </div>
 
 <DeckFooter page="01" />
@@ -149,11 +156,11 @@ title: 相关研究与项目切入点
 
 ---
 layout: default
-title: 已有原型：cuberoot.me
+title: 已有原型：cuberoot.me/zh/alg/photo
 ---
 
 <p class="eyebrow">前期工作与原型展示</p>
-<h1>已有原型：cuberoot.me</h1>
+<h1 class="prototype-title">已有原型：<a href="https://cuberoot.me/zh/alg/photo" target="_blank" rel="noopener noreferrer">cuberoot.me/zh/alg/photo</a></h1>
 
 <div class="prototype-gallery">
   <AssetFrame name="overview" class="prototype-overview" />

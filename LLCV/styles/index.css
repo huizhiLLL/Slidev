@@ -163,7 +163,13 @@
 .slidev-layout .cover-title { font-size: 45px; line-height: 1.55; letter-spacing: -0.015em; }
 .slidev-layout .cover-description { margin-top: 29px; font-size: 24px; line-height: 1.65; }
 .slidev-layout .cover-fields { margin-top: 39px; color: var(--muted); font-size: 16px; }
-.cover-photo { width: 382px; height: 466px; justify-self: end; align-self: end; }
+.cover-visual { position: relative; width: 382px; height: 466px; justify-self: start; align-self: end; }
+.cover-photo { width: 100%; height: 100%; }
+.cover-prompts { position: absolute; inset: 0; pointer-events: none; color: #24313c; font: 400 21px/1.25 Georgia, 'Times New Roman', serif; letter-spacing: -0.015em; }
+.cover-prompts span { position: absolute; white-space: nowrap; }
+.prompt-case { top: 22px; left: 20px; }
+.prompt-alg { top: 48px; right: 20px; }
+.prompt-how { bottom: 22px; left: 20px; }
 .cover-photo,
 .observation-visual .asset-frame { view-transition-name: llcv-observation; }
 
@@ -201,6 +207,9 @@
 .research-focus > span { padding-top: 7px; color: var(--muted); font-size: 17px; white-space: nowrap; }
 .research-focus p { font-size: 25px; line-height: 1.6; }
 
+.slidev-layout .prototype-title a { color: inherit; text-decoration: none; }
+.slidev-layout .prototype-title a:hover { text-decoration: underline; text-underline-offset: 6px; }
+.prototype-title a:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
 .prototype-gallery { display: grid; grid-template-columns: 576px minmax(0, 1fr); gap: 56px; height: 440px; margin-top: 20px; }
 .prototype-copy { padding-top: 8px; }
 .slidev-layout .prototype-status { font-size: 18px; line-height: 1.7; color: var(--green); }

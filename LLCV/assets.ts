@@ -13,7 +13,7 @@ export const assets = {
   },
   overview: {
     src: 'images/prototype-overview.png',
-    label: 'cuberoot.me 拍照查公式',
+    label: 'cuberoot.me/zh/alg/photo 拍照查公式',
     detail: '原图、识别过程与公式查询的真实页面全景',
     kind: '原型截图',
   },
