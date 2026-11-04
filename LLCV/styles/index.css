@@ -176,7 +176,6 @@
 
 .observation-layout { display: grid; grid-template-columns: 380px minmax(0, 1fr); gap: 36px; margin-top: 24px; }
 .observation-visual .asset-frame { width: 350px; height: 350px; margin-inline: auto; }
-.slidev-layout .figure-caption { margin-top: 12px; color: var(--muted); font-size: 17px; }
 .slidev-layout .observation-demand { font-size: 24px; font-weight: 600; }
 .query-comparison { display: grid; gap: 7px; margin-top: 12px; font-size: 20px; }
 .query-comparison span, .query-comparison strong { display: inline-block; width: 94px; }

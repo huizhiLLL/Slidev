@@ -60,7 +60,6 @@ title: 一张照片中的有限观测
 <div class="observation-layout">
   <div class="observation-visual">
     <AssetFrame name="observation" />
-    <p class="figure-caption">真实标注图：顶面与相邻两侧顶行</p>
   </div>
   <div class="observation-copy">
     <p class="observation-demand">玩家通过照片交流，能否直接查公式？</p>
@@ -81,7 +80,6 @@ title: 一张照片中的有限观测
   </div>
 </div>
 
-<p class="boundary-note"><strong>15 格推断依赖上述先验，不适用于任意打乱状态。</strong> F2L 是否已复原，不能仅凭这 15 格自行验证。</p>
 <DeckFooter page="02" />
 
 <!--
