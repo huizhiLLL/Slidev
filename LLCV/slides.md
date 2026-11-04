@@ -69,7 +69,7 @@ title: 一张照片中的有限观测
       <p><strong class="blue">本项目</strong>单张斜视照片 → 局部状态 → 适用公式</p>
     </div>
     <div class="observation-equation" aria-label="顶面九格，加两个侧面顶行各三格，共十五格">
-      <div class="blue">9<small>顶面</small></div><i>+</i><div class="green">3<small>左侧顶行</small></div><i>+</i><div class="orange">3<small>右侧顶行</small></div><i>=</i><div>15<small>局部观测</small></div>
+      <div class="blue">9<small>顶面</small></div><i>+</i><div class="green">3<small>顶层左侧</small></div><i>+</i><div class="orange">3<small>顶层右侧</small></div><i>=</i><div>15<small>局部观测</small></div>
     </div>
     <div class="input-priors">
       <h2>第一阶段输入先验</h2>
@@ -81,7 +81,7 @@ title: 一张照片中的有限观测
   </div>
 </div>
 
-<p class="boundary-note"><strong>15 格推断依赖上述先验，不适用于任意打乱状态。</strong><br>F2L 是否已复原，不能仅凭这 15 格自行验证。</p>
+<p class="boundary-note"><strong>15 格推断依赖上述先验，不适用于任意打乱状态。</strong> F2L 是否已复原，不能仅凭这 15 格自行验证。</p>
 <DeckFooter page="02" />
 
 <!--
