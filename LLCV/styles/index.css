@@ -225,11 +225,13 @@
 .slidev-layout .prototype-title a:hover { text-decoration: underline; text-underline-offset: 6px; }
 .prototype-title a:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
 .prototype-gallery { display: grid; grid-template-columns: 576px minmax(0, 1fr); gap: 56px; height: 440px; margin-top: 20px; }
-.prototype-copy { padding-top: 8px; }
-.slidev-layout .prototype-status { font-size: 18px; line-height: 1.7; color: var(--green); }
-.prototype-copy section { margin-top: 26px; }
+.prototype-copy { padding-top: 3px; }
+.slidev-layout .prototype-status { font-size: 19px; line-height: 1.5; color: var(--green); }
+.slidev-layout .prototype-summary { margin-top: 10px; font-size: 22px; line-height: 1.5; }
+.prototype-copy section { margin-top: 18px; }
 .prototype-copy h2 { font-size: 23px; }
-.prototype-copy section p { margin-top: 10px; font-size: 21px; line-height: 1.7; color: var(--muted); }
+.prototype-copy section p { margin-top: 7px; font-size: 21px; line-height: 1.5; }
+.slidev-layout .prototype-evidence { margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 17px; line-height: 1.5; color: var(--muted); }
 
 .research-roadmap { display: grid; grid-template-columns: 280px 1fr; align-items: center; gap: 90px; height: 387px; margin-top: 19px; }
 .roadmap-origin { position: relative; padding: 24px 0; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--rule); }
