@@ -10,7 +10,7 @@ const appendix = await read('appendix.md')
 const { parse } = await import('@slidev/parser')
 const mainDeck = await parse(main, resolve(root, 'slides.md'))
 const appendixDeck = await parse(appendix, resolve(root, 'appendix.md'))
-assert.equal(mainDeck.slides.length, 7, '主体必须恰为七页')
+assert.equal(mainDeck.slides.length, 8, '主体应为七页研究内容与一页致谢')
 assert.equal(appendixDeck.slides.length, 5, '备用资料应为五页独立入口')
 
 let duration = 0

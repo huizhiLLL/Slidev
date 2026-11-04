@@ -44,6 +44,7 @@ for (const [path, destination, code] of [
   ['/llcv/appendix', '/llcv/appendix/', 301],
   ['/llcv/1', '/llcv/', 200],
   ['/llcv/7', '/llcv/', 200],
+  ['/llcv/8', '/llcv/', 200],
   ['/llcv/presenter/3', '/llcv/', 200],
   ['/llcv/overview', '/llcv/', 200],
   ['/llcv/appendix/2', '/llcv/appendix/', 200],

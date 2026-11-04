@@ -4,7 +4,7 @@
 
 | 项目 | 说明 | 入口 |
 | --- | --- | --- |
-| [LLCV](./LLCV/) | 魔方视觉识别 SITP 申报汇报，7 页主体，5 页独立备用页 | `/llcv/` · [使用说明](./LLCV/README.md) · [设计规范](./LLCV/design.md) |
+| [LLCV](./LLCV/) | 魔方视觉识别 SITP 申报汇报，7 页研究内容 + 1 页致谢，5 页独立备用页 | `/llcv/` · [使用说明](./LLCV/README.md) · [设计规范](./LLCV/design.md) |
 
 ## 运行 LLCV
 
@@ -47,7 +47,7 @@ npm run preview
 部署后的路径：
 
 - `/`：单 HTML 集合导航。
-- `/llcv`：跳转到 `/llcv/`，进入七页主体。
+- `/llcv`：跳转到 `/llcv/`，进入八页主体（含致谢）。
 - `/llcv/5`：直接打开第五页，刷新仍可访问。
 - `/llcv/presenter/1`：演讲者入口。
 - `/llcv/appendix/`：独立备用资料。

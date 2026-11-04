@@ -269,6 +269,9 @@
 .deliverables dd { margin: 0; }
 .slidev-layout .closing-line { margin-top: 18px; font-family: var(--title-font); font-size: 24px; line-height: 1.4; }
 
+.thanks-layout { display: grid; place-items: center; height: 522px; }
+.slidev-layout .thanks-title { font-size: 88px; line-height: 1.2; }
+
 .slidev-layout .appendix-lead { margin-top: 25px; color: var(--muted); font-size: 21px; }
 .theory-layout { display: grid; grid-template-columns: 1.2fr 1fr; gap: 65px; margin-top: 40px; }
 .slidev-layout .numbered-list { margin-top: 20px; padding-left: 1.2em; font-size: 22px; }
