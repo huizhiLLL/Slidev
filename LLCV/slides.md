@@ -15,7 +15,7 @@ fonts:
   local: [MiSans, Noto Serif SC]
 drawings:
   enabled: false
-transition: none
+transition: view-transition
 mdc: true
 download: false
 exportFilename: LLCV-SITP

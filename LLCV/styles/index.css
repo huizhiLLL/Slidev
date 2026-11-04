@@ -39,6 +39,8 @@
   --body-font: 'MiSans', 'PingFang SC', 'SF Pro Text', sans-serif;
   --title-font: 'LLCV Title', 'LLCV Serif', 'Noto Serif SC', serif;
   --slidev-theme-primary: #285eb5;
+  --llcv-motion-ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --slidev-transition-duration: 280ms;
 }
 
 .slidev-layout {
@@ -80,6 +82,8 @@
   line-height: 1.45;
 }
 
+.slidev-layout > h1 { view-transition-name: llcv-heading; }
+
 .slidev-layout strong { font-weight: 600; }
 .slidev-layout .eyebrow {
   max-width: calc(100% - 210px);
@@ -96,6 +100,7 @@
 .red { color: var(--red); }
 
 .school-logo {
+  view-transition-name: llcv-logo;
   position: absolute;
   top: 24px;
   right: 64px;
@@ -106,6 +111,7 @@
 }
 
 .deck-footer {
+  view-transition-name: llcv-footer;
   position: absolute;
   right: 64px;
   bottom: 24px;
@@ -158,6 +164,8 @@
 .slidev-layout .cover-description { margin-top: 29px; font-size: 24px; line-height: 1.65; }
 .slidev-layout .cover-fields { margin-top: 39px; color: var(--muted); font-size: 16px; }
 .cover-photo { width: 382px; height: 466px; justify-self: end; align-self: end; }
+.cover-photo,
+.observation-visual .asset-frame { view-transition-name: llcv-observation; }
 
 .observation-layout { display: grid; grid-template-columns: 508px 1fr; gap: 60px; margin-top: 29px; }
 .observation-visual .asset-frame { width: 350px; height: 350px; margin-inline: auto; }
@@ -251,6 +259,62 @@
 .qa-list dt { font-size: 23px; font-weight: 600; }
 .qa-list dd { margin: 0; color: var(--muted); font-size: 21px; line-height: 1.6; }
 
+/* Slidev uses these Vue classes when native View Transitions are unavailable. */
+.view-transition-enter-active,
+.view-transition-leave-active {
+  transition: opacity var(--slidev-transition-duration) var(--llcv-motion-ease);
+}
+
+.view-transition-enter-from,
+.view-transition-leave-to { opacity: 0; }
+
+::view-transition-group(*) {
+  animation-duration: 340ms;
+  animation-timing-function: var(--llcv-motion-ease);
+}
+
+::view-transition-old(root) {
+  animation: llcv-fade-out 180ms ease-out both;
+}
+
+::view-transition-new(root) {
+  animation: llcv-fade-in 280ms var(--llcv-motion-ease) both;
+}
+
+::view-transition-old(llcv-observation),
+::view-transition-new(llcv-observation) {
+  height: 100%;
+  object-fit: contain;
+}
+
+@keyframes llcv-fade-out {
+  to { opacity: 0; }
+}
+
+@keyframes llcv-fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .view-transition-enter-active,
+  .view-transition-leave-active { transition: none; }
+
+  .view-transition-enter-from,
+  .view-transition-leave-to { opacity: 1; }
+
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
 @media print {
   .slidev-layout { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .slidev-layout * {
+    view-transition-name: none !important;
+    animation: none !important;
+    transition: none !important;
+  }
 }
