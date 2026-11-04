@@ -191,14 +191,13 @@
 .input-priors dd { margin: 0; font-size: 20px; line-height: 1.65; }
 .slidev-layout .boundary-note { position: absolute; left: 64px; right: 64px; bottom: 78px; color: var(--muted); font-size: 18px; line-height: 1.55; }
 
-/* Three layers share a baseline; arrows connect their outputs, without card containers. */
+/* Three layers share a baseline; arrows connect the stages, without card containers. */
 .research-flow { display: grid; grid-template-columns: 1fr 1.08fr 1fr; gap: 32px; margin-top: 24px; }
 .flow-stage { position: relative; min-width: 0; padding-top: 9px; border-top: 2px solid currentColor; }
 .flow-stage:not(:last-child)::after { content: '→'; position: absolute; right: -26px; top: 63px; color: #899099; font-size: 23px; }
 .flow-number { display: block; margin-bottom: 5px; font-size: 16px; line-height: 1.4; }
 .slidev-layout .flow-stage h2 { color: var(--ink); font-size: 26px; }
 .slidev-layout .flow-stage p { margin-top: 10px; color: var(--ink); font-size: 20px; line-height: 1.65; }
-.flow-output { display: block; margin-top: 11px; font-size: 17px; line-height: 1.4; color: var(--muted); }
 .flow-constraints { display: grid; gap: 5px; margin-top: 7px; color: var(--ink); font-size: 20px; line-height: 1.2; }
 .flow-constraints .math-block { line-height: 1; }
 .flow-constraints .katex-display { margin: 0; text-align: left; font-size: 20px; }
