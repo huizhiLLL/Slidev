@@ -165,7 +165,7 @@
 .slidev-layout .cover-path { display: flex; align-items: center; gap: 16px; margin-top: 32px; font-size: 21px; }
 .cover-path i { color: var(--muted); font-style: normal; }
 .slidev-layout .cover-author { position: absolute; top: 100%; left: 0; margin-top: 20px; color: var(--muted); font-size: 20px; line-height: 1.5; }
-.cover-visual { position: relative; width: 382px; height: 466px; justify-self: start; align-self: end; }
+.cover-visual { position: relative; left: -18px; width: 382px; height: 466px; justify-self: start; align-self: end; }
 .cover-photo { width: 100%; height: 100%; }
 .cover-prompts { position: absolute; inset: 0; pointer-events: none; color: #24313c; font: 400 21px/1.25 Georgia, 'Times New Roman', serif; letter-spacing: -0.015em; }
 .cover-prompts span { position: absolute; white-space: nowrap; }
