@@ -3,7 +3,7 @@ theme: default
 title: 基于单帧斜视图像的三阶魔方局部状态推断与公式匹配方法研究
 info: |
   SITP 申报汇报。内容依据研究总纲第 14 章，7 页研究内容与 1 页致谢。
-author: ''
+author: 胡泽亮
 lang: zh-CN
 colorSchema: light
 aspectRatio: 16/9
@@ -28,6 +28,7 @@ layout: default
     <h1 class="cover-title">基于单帧斜视图像的<br>三阶魔方局部状态推断<br>与公式匹配方法研究</h1>
     <p class="cover-description">面向三阶魔方单帧斜视照片，<br>推断局部状态，匹配适用公式。</p>
     <p class="cover-path"><span class="blue">图像感知</span><i>→</i><span class="green">状态推断</span><i>→</i><span class="orange">公式匹配</span></p>
+    <p class="cover-author">汇报人：胡泽亮</p>
   </div>
   <div class="cover-visual">
     <AssetFrame name="input" class="cover-photo" />
