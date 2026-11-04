@@ -102,6 +102,7 @@
 .school-logo {
   view-transition-name: llcv-logo;
   position: absolute;
+  z-index: 2;
   top: 24px;
   right: 64px;
   width: 180px;
@@ -113,6 +114,7 @@
 .deck-footer {
   view-transition-name: llcv-footer;
   position: absolute;
+  z-index: 2;
   right: 64px;
   bottom: 24px;
   left: 64px;
@@ -157,21 +159,21 @@
 .asset-detail { max-width: 350px; margin-top: 10px; color: var(--muted); font-size: 17px; line-height: 1.6; }
 .asset-pending { margin-top: 35px; color: var(--muted); font-size: 14px; }
 
-.cover-layout { display: grid; grid-template-columns: 610px 1fr; gap: 34px; align-items: center; height: 522px; }
-.cover-copy { position: relative; padding-top: 6px; }
+.cover-layout { display: flex; align-items: center; height: 522px; }
+.cover-copy { position: relative; z-index: 1; width: 610px; padding-top: 6px; }
 .slidev-layout .cover-copy .eyebrow { margin-bottom: 36px; }
 .slidev-layout .cover-title { font-size: 45px; line-height: 1.55; letter-spacing: -0.015em; }
 .slidev-layout .cover-description { margin-top: 29px; font-size: 24px; line-height: 1.65; }
 .slidev-layout .cover-path { display: flex; align-items: center; gap: 16px; margin-top: 32px; font-size: 21px; }
 .cover-path i { color: var(--muted); font-style: normal; }
 .slidev-layout .cover-author { position: absolute; top: 100%; left: 0; margin-top: 20px; color: var(--muted); font-size: 20px; line-height: 1.5; }
-.cover-visual { position: relative; left: -18px; width: 382px; height: 466px; justify-self: start; align-self: end; }
-.cover-photo { width: 100%; height: 100%; }
-.cover-prompts { position: absolute; inset: 0; pointer-events: none; color: #24313c; font: 400 21px/1.25 Georgia, 'Times New Roman', serif; letter-spacing: -0.015em; }
+.cover-visual { position: absolute; inset: 0 0 0 auto; z-index: 0; height: 100%; aspect-ratio: 1136 / 1385; pointer-events: none; }
+.cover-photo { width: 100%; height: 100%; border: 0; opacity: 0.28; }
+.cover-prompts { position: absolute; inset: 0; pointer-events: none; color: var(--muted); font: 400 21px/1.25 Georgia, 'Times New Roman', serif; letter-spacing: -0.015em; }
 .cover-prompts span { position: absolute; white-space: nowrap; }
-.prompt-case { top: 22px; left: 20px; }
-.prompt-alg { top: 48px; right: 20px; }
-.prompt-how { bottom: 22px; left: 20px; }
+.prompt-case { top: 90px; left: 32px; }
+.prompt-alg { top: 122px; right: 40px; }
+.prompt-how { bottom: 100px; left: 32px; }
 .cover-photo,
 .observation-visual .asset-frame { view-transition-name: llcv-observation; }
 
