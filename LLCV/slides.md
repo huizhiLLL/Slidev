@@ -137,17 +137,18 @@ title: 相关研究与项目切入点
 <h1>相关研究与项目切入点</h1>
 
 <table class="research-table">
-  <thead><tr><th>研究方向</th><th>代表工作</th><th>已有基础</th></tr></thead>
+  <thead><tr><th>技术方向</th><th>已有研究基础</th><th>本项目关注</th></tr></thead>
   <tbody>
-    <tr><td><span class="blue">传统几何视觉</span></td><td>Kasprzak 等，2007<small>单视角魔方重建</small></td><td>利用颜色、几何结构与先验<br>检测并重建可见表面</td></tr>
-    <tr><td><span class="green">CNN 辅助定位</span></td><td>Hack &amp; Shutzberg，2015<small>Stanford CS231n 课程项目报告</small></td><td>学习模型定位，结合透视处理<br>与传统视觉读取状态</td></tr>
-    <tr><td><span class="orange">颜色识别</span></td><td>Liu 等，2019<small>arXiv 预印本</small></td><td>关注光照变化、颜色漂移<br>与颜色分类</td></tr>
+    <tr><td><span class="blue">传统几何视觉</span></td><td>颜色、几何与结构先验重建可见面<small>Kasprzak 等，2007 · 单视角重建</small></td><td>定位单帧斜视网格<br>分析背景与透视干扰</td></tr>
+    <tr><td><span class="green">学习辅助定位</span></td><td>CNN 定位魔方与面中心，结合传统视觉<small>Hack &amp; Shutzberg，2015 · CS231n 课程报告</small></td><td>视瓶颈探索关键点定位<br>共享透视与颜色后处理</td></tr>
+    <tr><td><span class="orange">颜色识别</span></td><td>光照变化、颜色漂移与颜色分类<small>Liu 等，2019 · arXiv 预印本</small></td><td>独立检查颜色错误<br>保留观测可靠性信息</td></tr>
+    <tr><td>魔方状态建模</td><td>Cubie 表示：块身份、朝向与排列<small>Kociemba / Heise · 状态表示与约束说明</small></td><td>局部观测 → 合法候选<br>按公式体系目标验证</td></tr>
   </tbody>
 </table>
 
 <div class="research-focus">
   <span>本项目切入点</span>
-  <p>面向公式查询，研究<span class="blue">局部观测</span>下的<span class="green">合法状态推断</span><br>与<span class="orange">公式目标验证</span>。</p>
+  <p>面向公式查询：<span class="blue">局部视觉观测</span> → <span class="green">合法状态推断</span> → <span class="orange">公式目标验证</span><br><small>基础技术已有先例，研究重点是上述任务组合及其可靠性。</small></p>
 </div>
 
 <DeckFooter page="04" />
@@ -155,9 +156,9 @@ title: 相关研究与项目切入点
 <!--
 用时：50 秒。累计：3:45。
 
-魔方视觉识别已经有研究基础。2007 年的单视角重建工作利用颜色、几何和结构先验提取可见面。2015 年的 Stanford 课程项目报告采用 CNN 辅助定位，再结合传统视觉处理透视和颜色。2019 年的颜色识别预印本则关注光照变化带来的颜色漂移。因此，这个项目不主张首次实现单张照片识别魔方。我们的切入点是面向公式查询，把局部可见信息、合法状态推断与公式目标验证结合起来，并通过现有应用和后续样本测试分析它的可靠性。
+相关研究按环节看。Kasprzak 等的单视角重建提供了颜色和几何先验的基础；Hack 与 Shutzberg 用 CNN 定位魔方及面中心，再结合传统视觉，属于课程报告，不是已验证的本项目关键点模型。Liu 等的预印本研究的是光照变化和颜色漂移，不能用来证明几何定位或 Cubie 推断。状态建模则沿用 Kociemba 的块表示与 Heise 的合法性约束说明。右栏对应我们在各环节要解决的问题。项目不主张首次实现单图魔方识别，关注的是局部视觉、合法候选和公式目标验证的任务组合，以及真实样本中的可靠性。
 
-文献依据全部来自研究总纲第 14.2 节第 4 页与第 12 章，未在本次制作中增加新文献或复现其性能。
+代表文献来自研究总纲第 14.2 节第 4 页与第 12 章，状态建模资料来自第 3、9 章，未在本次制作中增加新文献或复现其性能。
 完整标题与来源见 appendix.md 的参考资料页。课程报告和预印本的证据性质已在页面注明。
 -->
 
