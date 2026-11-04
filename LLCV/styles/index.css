@@ -232,14 +232,14 @@
 .prototype-copy { padding-top: 3px; }
 .slidev-layout .prototype-status { font-size: 19px; line-height: 1.5; color: var(--green); }
 .slidev-layout .prototype-summary { margin-top: 10px; font-size: 22px; line-height: 1.5; }
-.prototype-copy section { margin-top: 18px; }
+.prototype-copy section { margin-top: 12px; }
 .prototype-copy h2 { font-size: 23px; }
 .prototype-copy section p { margin-top: 7px; font-size: 21px; line-height: 1.5; }
-.slidev-layout .prototype-evidence { margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--rule); font-size: 17px; line-height: 1.5; color: var(--muted); }
+.slidev-layout .prototype-evidence { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--rule); font-size: 17px; line-height: 1.5; color: var(--muted); }
 
 .research-plan { display: grid; grid-template-columns: 600px minmax(0, 1fr); gap: 40px; margin-top: 22px; }
 .slidev-layout .roadmap-origin { padding-bottom: 9px; color: var(--muted); font-size: 17px; line-height: 1.5; }
-.roadmap-line { padding: 12px 0; border-top: 1px solid var(--rule); }
+.roadmap-line { padding: 8px 0; border-top: 1px solid var(--rule); }
 .roadmap-line.future { border-top-style: dashed; border-top-color: #c9a484; }
 .roadmap-line-title { display: flex; gap: 18px; align-items: baseline; }
 .slidev-layout .roadmap-line-title h2 { color: var(--ink); font-size: 23px; line-height: 1.4; }
@@ -252,6 +252,7 @@
 .evaluation-table th:first-child { width: 108px; }
 .evaluation-table td { padding: 8px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
 .slidev-layout .evaluation-conditions { margin-top: 12px; color: var(--muted); font-size: 17px; line-height: 1.5; }
+.slidev-layout .research-comparison-note { margin-top: 14px; color: var(--muted); font-size: 17px; line-height: 1.5; }
 
 .slidev-layout .project-timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; margin-top: 26px; padding: 0; list-style: none; }
 .project-timeline li { position: relative; padding-top: 16px; border-top: 1px solid #a8afb6; }

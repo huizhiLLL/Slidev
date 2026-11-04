@@ -213,8 +213,8 @@ title: 后续研究与可靠性改进
       <thead><tr><th>环节</th><th>拟记录指标</th></tr></thead>
       <tbody>
         <tr><td>几何定位</td><td>成功情况 / 角点误差</td></tr>
-        <tr><td>颜色识别</td><td>单格正确率<br>15 格整体正确率</td></tr>
-        <tr><td>状态推断</td><td>真值候选覆盖<br>错误唯一解</td></tr>
+        <tr><td>颜色识别</td><td>单格 / 15 格整体正确率</td></tr>
+        <tr><td>状态推断</td><td>真值候选覆盖 / 错误唯一解</td></tr>
         <tr><td>公式匹配</td><td>公式对真实状态的目标正确性</td></tr>
         <tr><td>系统表现</td><td>拒识 / 人工调整 / 处理时间</td></tr>
       </tbody>
@@ -223,7 +223,7 @@ title: 后续研究与可靠性改进
   </section>
 </div>
 
-<p class="boundary-note">先由失败样本定位瓶颈；若引入学习模型，仅替换定位模块，共用颜色、状态与公式验证流程。<br>采用相同测试样本，报告输出覆盖与正确情况，不预设性能提升或大规模训练任务。</p>
+<p class="research-comparison-note">先由失败样本定位瓶颈；若引入学习模型，仅替换定位模块，共用颜色、状态与公式验证流程。<br>采用相同测试样本，报告输出覆盖与正确情况，不预设性能提升或大规模训练任务。</p>
 <DeckFooter page="06" />
 
 <!--
@@ -256,7 +256,7 @@ title: 计划安排与预期成果
   <dl>
     <div><dt>方法</dt><dd>局部视觉观测、合法状态推断与公式匹配方法</dd></div>
     <div><dt>系统</dt><dd>完善 cuberoot.me Web 工具，<span class="green">现有入口已接入</span></dd></div>
-    <div><dt>应用</dt><dd>AstrBot WCA 群聊插件<span class="orange">（计划接入）</span><br>MCP / Agent 专用识别接口<span class="orange">（后续拓展）</span></dd></div>
+    <div><dt>应用</dt><dd>AstrBot WCA 群聊插件<span class="orange">（计划接入）</span> / MCP · Agent 接口<span class="orange">（后续拓展）</span></dd></div>
     <div><dt>研究记录</dt><dd>真实测试样本、失败案例、实验记录与 SITP 研究报告</dd></div>
   </dl>
 </div>
