@@ -26,8 +26,8 @@ layout: default
   <div class="cover-copy">
     <p class="eyebrow">SITP 申报汇报</p>
     <h1 class="cover-title">基于单帧斜视图像的<br>三阶魔方局部状态推断<br>与公式匹配方法研究</h1>
-    <p class="cover-description">从一张照片的有限可见信息中，<br>推断可能状态，匹配适用公式。</p>
-    <p class="cover-fields">计算机视觉 / 图像处理 / 结构化状态推理</p>
+    <p class="cover-description">面向三阶魔方单帧斜视照片，<br>推断局部状态，匹配适用公式。</p>
+    <p class="cover-path"><span class="blue">图像感知</span><i>→</i><span class="green">状态推断</span><i>→</i><span class="orange">公式匹配</span></p>
   </div>
   <div class="cover-visual">
     <AssetFrame name="input" class="cover-photo" />
@@ -44,7 +44,7 @@ layout: default
 <!--
 用时：40 秒。累计：0:40。
 
-这项研究来自魔方玩家查公式时一个很具体的场景：我们手里往往只有一张斜着拍的照片，希望知道眼前这种情况可以用什么公式。我的目标是利用照片中有限的可见色块，结合魔方自身的结构约束，推断可能状态，再查询和验证适用公式。目前已经有传统视觉版本接入 cuberoot.me，后续研究会以这个原型为基础展开。
+这项研究来自玩家用照片查公式的需求。研究对象是三阶魔方的单帧斜视照片，任务是利用有限的可见色块推断局部状态，最终匹配适用公式。图像感知、状态推断和公式匹配是整套方法的三个层次。目前已有传统视觉版本接入 cuberoot.me，后续从这个可运行原型出发。
 
 内容依据：研究总纲第 14.1、14.2 节第 1 页。照片由用户提供。
 -->
@@ -60,29 +60,34 @@ title: 一张照片中的有限观测
 <div class="observation-layout">
   <div class="observation-visual">
     <AssetFrame name="observation" />
-    <p class="figure-caption">只读取顶面与两个相邻侧面的顶层区域</p>
+    <p class="figure-caption">真实标注图：顶面与相邻两侧顶行</p>
   </div>
   <div class="observation-copy">
-    <p class="lead">面对交流中的一张照片，<br>减少手动判断与逐面录入。</p>
-    <div class="observation-equation" aria-label="顶面九格，加两个侧面顶行各三格，共十五格">
-      <span class="blue">9</span><i>+</i><span class="green">3</span><i>+</i><span class="orange">3</span><i>=</i><strong>15</strong>
+    <p class="observation-demand">玩家通过照片交流，能否直接查公式？</p>
+    <div class="query-comparison">
+      <p><span>人工查询</span>辨认情况 / 转动魔方逐面录入 → 查表</p>
+      <p><strong class="blue">本项目</strong>单张斜视照片 → 局部状态 → 适用公式</p>
     </div>
-    <p class="equation-caption">顶面 9 格 / 两个侧面顶行各 3 格</p>
-    <ul class="plain-list input-conditions">
-      <li>标准配色三阶魔方</li>
-      <li>前两层（F2L）已复原且对齐</li>
-      <li>顶面与两个相邻侧面顶层清晰可见</li>
-    </ul>
+    <div class="observation-equation" aria-label="顶面九格，加两个侧面顶行各三格，共十五格">
+      <div class="blue">9<small>顶面</small></div><i>+</i><div class="green">3<small>左侧顶行</small></div><i>+</i><div class="orange">3<small>右侧顶行</small></div><i>=</i><div>15<small>局部观测</small></div>
+    </div>
+    <div class="input-priors">
+      <h2>第一阶段输入先验</h2>
+      <dl>
+        <div><dt>对象与参考</dt><dd>标准配色三阶魔方<br>固定参考系、合法状态</dd></div>
+        <div><dt>状态与可见性</dt><dd><strong>F2L 完整复原且各层对齐</strong><br>顶面与两侧顶行清晰可见</dd></div>
+      </dl>
+    </div>
   </div>
 </div>
 
-<p class="boundary-note">F2L 已复原是输入先验。15 格推断仅适用于上述受控场景。</p>
+<p class="boundary-note"><strong>15 格推断依赖上述先验，不适用于任意打乱状态。</strong><br>F2L 是否已复原，不能仅凭这 15 格自行验证。</p>
 <DeckFooter page="02" />
 
 <!--
 用时：60 秒。累计：1:40。
 
-玩家在群聊或论坛里经常用照片交流魔方情况。手动查公式需要先辨认当前情况，多面录入则需要额外拍摄和转动。这里研究的是利用单张照片中的局部信息完成查询。第一阶段先把条件限定清楚：标准配色三阶魔方，前两层已经复原、各层对齐，顶面和两个相邻侧面的顶层清晰可见。顶面九格加两个侧面各三格，共十五个观测。前两层已复原是使用时必须满足的先验，不能仅靠这十五格自行验证。我们的推断结论也只在这些条件下成立，不能推广到任意打乱状态。
+玩家在群聊或论坛里经常用照片交流魔方情况。人工查公式需要先辨认情况，多面录入则要额外拍摄和转动。我们希望把这一步变成单张照片查询。左图已经标出了观测范围：顶面九格、左侧顶行三格、右侧顶行三格，总共十五格。但这个信息量必须和输入先验一起理解：标准配色，固定参考系，合法魔方状态，尤其是前两层完整复原且各层对齐，相关区域清晰可见。在这些受控条件下，局部观测可以结合结构约束推断末层。F2L 已复原不能由这十五格自行验证，所以这不是任意打乱魔方的通用识别方案。
 
 内容依据：研究总纲第 14.2 节第 2 页及第 14.3 节。15 格标注图由用户提供。
 -->

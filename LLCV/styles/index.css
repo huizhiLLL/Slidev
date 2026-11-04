@@ -162,7 +162,8 @@
 .slidev-layout .cover-copy .eyebrow { margin-bottom: 36px; }
 .slidev-layout .cover-title { font-size: 45px; line-height: 1.55; letter-spacing: -0.015em; }
 .slidev-layout .cover-description { margin-top: 29px; font-size: 24px; line-height: 1.65; }
-.slidev-layout .cover-fields { margin-top: 39px; color: var(--muted); font-size: 16px; }
+.slidev-layout .cover-path { display: flex; align-items: center; gap: 16px; margin-top: 32px; font-size: 21px; }
+.cover-path i { color: var(--muted); font-style: normal; }
 .cover-visual { position: relative; width: 382px; height: 466px; justify-self: start; align-self: end; }
 .cover-photo { width: 100%; height: 100%; }
 .cover-prompts { position: absolute; inset: 0; pointer-events: none; color: #24313c; font: 400 21px/1.25 Georgia, 'Times New Roman', serif; letter-spacing: -0.015em; }
@@ -173,17 +174,21 @@
 .cover-photo,
 .observation-visual .asset-frame { view-transition-name: llcv-observation; }
 
-.observation-layout { display: grid; grid-template-columns: 508px 1fr; gap: 60px; margin-top: 29px; }
+.observation-layout { display: grid; grid-template-columns: 380px minmax(0, 1fr); gap: 36px; margin-top: 24px; }
 .observation-visual .asset-frame { width: 350px; height: 350px; margin-inline: auto; }
 .slidev-layout .figure-caption { margin-top: 12px; color: var(--muted); font-size: 17px; }
-.lead { font-size: 25px; line-height: 1.65; }
-.observation-equation { display: flex; align-items: baseline; gap: 12px; margin-top: 18px; font-size: 57px; font-weight: 600; line-height: 1.25; }
-.observation-equation i { font-size: 27px; font-style: normal; font-weight: 400; color: var(--muted); }
-.slidev-layout .equation-caption { margin-top: 7px; color: var(--muted); font-size: 17px; }
-.slidev-layout .plain-list { padding: 0; list-style: none; }
-.slidev-layout .input-conditions { margin-top: 22px; font-size: 22px; }
-.input-conditions li { padding: 3px 0; }
-.input-conditions li::before { content: ''; display: inline-block; width: 5px; height: 5px; margin-right: 13px; margin-bottom: 4px; background: var(--ink); }
+.slidev-layout .observation-demand { font-size: 24px; font-weight: 600; }
+.query-comparison { display: grid; gap: 7px; margin-top: 12px; font-size: 20px; }
+.query-comparison span, .query-comparison strong { display: inline-block; width: 94px; }
+.query-comparison span { color: var(--muted); }
+.observation-equation { display: flex; align-items: flex-start; gap: 22px; margin-top: 20px; font-size: 50px; font-weight: 600; line-height: 1.15; }
+.observation-equation i { padding-top: 13px; font-size: 25px; font-style: normal; font-weight: 400; color: var(--muted); }
+.observation-equation small { display: block; margin-top: 5px; font-size: 17px; line-height: 1.4; font-weight: 400; color: var(--muted); }
+.input-priors { margin-top: 20px; padding-top: 14px; border-top: 1px solid var(--rule); }
+.slidev-layout .input-priors h2 { font-size: 21px; }
+.input-priors dl { display: grid; grid-template-columns: 1fr 1.2fr; gap: 22px; margin-top: 9px; }
+.input-priors dt { margin-bottom: 4px; font-size: 17px; color: var(--muted); }
+.input-priors dd { margin: 0; font-size: 20px; line-height: 1.65; }
 .slidev-layout .boundary-note { position: absolute; left: 64px; right: 64px; bottom: 78px; color: var(--muted); font-size: 18px; line-height: 1.55; }
 
 .slidev-layout .research-flow { display: grid; grid-template-columns: repeat(4, 1fr); gap: 30px; padding: 0; margin-top: 45px; list-style: none; }
