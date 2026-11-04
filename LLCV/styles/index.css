@@ -165,7 +165,6 @@
 .cover-copy { position: relative; z-index: 1; width: 610px; padding-top: 6px; }
 .slidev-layout .cover-copy .eyebrow { margin-bottom: 36px; }
 .slidev-layout .cover-title { font-size: 45px; line-height: 1.55; letter-spacing: -0.015em; }
-.slidev-layout .cover-description { margin-top: 29px; font-size: 24px; line-height: 1.65; }
 .slidev-layout .cover-path { display: flex; align-items: center; gap: 16px; margin-top: 32px; font-size: 21px; }
 .cover-path i { color: var(--muted); font-style: normal; }
 .slidev-layout .cover-author { position: absolute; top: 100%; left: 0; margin-top: 20px; color: var(--muted); font-size: 20px; line-height: 1.5; }

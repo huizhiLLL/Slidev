@@ -26,7 +26,6 @@ layout: default
   <div class="cover-copy">
     <p class="eyebrow">SITP 申报汇报</p>
     <h1 class="cover-title">基于单帧斜视图像的<br>三阶魔方局部状态推断<br>与公式匹配方法研究</h1>
-    <p class="cover-description">面向三阶魔方单帧斜视照片，<br>推断局部状态，匹配适用公式。</p>
     <p class="cover-path"><span class="blue">图像感知</span><i>→</i><span class="green">状态推断</span><i>→</i><span class="orange">公式匹配</span></p>
     <p class="cover-author">汇报人：胡泽亮</p>
   </div>
