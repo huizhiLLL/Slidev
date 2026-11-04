@@ -239,10 +239,10 @@ title: 计划安排与预期成果
 <h1>计划安排与预期成果</h1>
 
 <ol class="project-timeline">
-  <li><span class="phase blue">01 / 前期</span><strong>梳理基础</strong><p>文献与原型分析<br>明确输入与测试标准</p><small>输出：输入 / 测试规范</small></li>
-  <li><span class="phase green">02 / 中期</span><strong>完善方法</strong><p>传统视觉优化<br>状态约束与公式验证</p><small>输出：改进模块与记录</small></li>
-  <li><span class="phase orange">03 / 后期</span><strong>测试与探索</strong><p>真实样本可靠性评价<br>必要时探索学习定位</p><small>输出：测试与失败分析</small></li>
-  <li><span class="phase red">04 / 结题</span><strong>整合演示</strong><p>系统整合与应用演示<br>研究总结与报告</p><small>输出：工具与 SITP 报告</small></li>
+  <li><span class="phase blue">01 / 前期</span><strong>梳理基础</strong><p>文献与原型分析<br>明确输入与测试标准</p></li>
+  <li><span class="phase green">02 / 中期</span><strong>完善方法</strong><p>传统视觉优化<br>状态约束与公式验证</p></li>
+  <li><span class="phase orange">03 / 后期</span><strong>测试与探索</strong><p>真实样本可靠性评价<br>必要时探索学习定位</p></li>
+  <li><span class="phase red">04 / 结题</span><strong>整合演示</strong><p>系统整合与应用演示<br>研究总结与报告</p></li>
 </ol>
 
 <div class="deliverables">
