@@ -104,7 +104,6 @@ title: 从局部观测到适用公式
   <section>
     <h2>状态不唯一 ≠ 公式不可查询</h2>
     <p><span class="green">状态可辨识性</span>：能否恢复唯一状态？<br><span class="orange">任务可辨识性</span>：是否存在共同适用公式？</p>
-    <p class="small-detail">例如 OLL 目标为顶层朝向完成，不要求排列复原。</p>
   </section>
   <section class="goal-validation">
     <h2>完整、非空候选集合上的验证</h2>
@@ -113,7 +112,6 @@ title: 从局部观测到适用公式
   </section>
 </div>
 
-<p class="core-boundary">候选须完整，执行约定须一致；没有共同公式时，允许校正、补拍或拒识。</p>
 <DeckFooter page="03" />
 
 <!--
@@ -146,7 +144,7 @@ title: 相关研究与项目切入点
 
 <div class="research-focus">
   <span>本项目切入点</span>
-  <p>面向公式查询：<span class="blue">局部视觉观测</span> → <span class="green">合法状态推断</span> → <span class="orange">公式目标验证</span><br><small>基础技术已有先例，研究重点是上述任务组合及其可靠性。</small></p>
+  <p>面向公式查询：<span class="blue">局部视觉观测</span> → <span class="green">合法状态推断</span> → <span class="orange">公式目标验证</span></p>
 </div>
 
 <DeckFooter page="04" />
@@ -181,7 +179,6 @@ title: 已有原型：cuberoot.me/zh/alg/photo
       <h2>当前局限</h2>
       <p>复杂背景、光照 / 反光、角度变化<br>可能导致定位失败或颜色错误。</p>
     </section>
-    <p class="prototype-evidence">已有工程基础；尚无系统量化结果。<br>深度学习定位模型尚未完成训练。</p>
   </div>
 </div>
 
@@ -221,7 +218,6 @@ title: 后续研究与可靠性改进
   </section>
 </div>
 
-<p class="research-comparison-note">先由失败样本定位瓶颈；若引入学习模型，仅替换定位模块，共用颜色、状态与公式验证流程。<br>采用相同测试样本，报告输出覆盖与正确情况，不预设性能提升或大规模训练任务。</p>
 <DeckFooter page="06" />
 
 <!--

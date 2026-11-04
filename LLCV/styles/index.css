@@ -208,10 +208,8 @@
 .slidev-layout .principle-layout h2 { font-size: 25px; }
 .slidev-layout .principle-layout p { margin-top: 10px; font-size: 21px; line-height: 1.65; }
 .slidev-layout .small-detail { margin-top: 12px; font-size: 17px; color: var(--muted); }
-.slidev-layout .principle-layout .small-detail { margin-top: 9px; font-size: 17px; line-height: 1.5; }
 .goal-validation .katex-display { margin: 8px 0 5px; font-size: 23px; }
 .slidev-layout .goal-validation .goal-legend { margin-top: 5px; color: var(--muted); font-size: 18px; line-height: 1.6; }
-.slidev-layout .core-boundary { margin-top: 14px; color: var(--muted); font-size: 17px; line-height: 1.4; }
 
 .slidev-layout .research-table { width: 100%; margin-top: 22px; border-collapse: collapse; table-layout: fixed; font-size: 21px; line-height: 1.4; }
 .research-table th { padding: 0 0 10px; text-align: left; color: var(--muted); font-size: 17px; font-weight: 400; border-bottom: 1px solid var(--rule); }
@@ -222,7 +220,6 @@
 .research-focus { display: flex; gap: 24px; align-items: flex-start; margin-top: 20px; }
 .research-focus > span { padding-top: 5px; color: var(--muted); font-size: 17px; white-space: nowrap; }
 .research-focus p { font-size: 24px; line-height: 1.5; }
-.research-focus small { font-size: 18px; color: var(--muted); }
 
 .slidev-layout .prototype-title a { color: inherit; text-decoration: none; }
 .slidev-layout .prototype-title a:hover { text-decoration: underline; text-underline-offset: 6px; }
@@ -234,7 +231,6 @@
 .prototype-copy section { margin-top: 12px; }
 .prototype-copy h2 { font-size: 23px; }
 .prototype-copy section p { margin-top: 7px; font-size: 21px; line-height: 1.5; }
-.slidev-layout .prototype-evidence { margin-top: 10px; padding-top: 8px; border-top: 1px solid var(--rule); font-size: 17px; line-height: 1.5; color: var(--muted); }
 
 .research-plan { display: grid; grid-template-columns: 600px minmax(0, 1fr); gap: 40px; margin-top: 22px; }
 .slidev-layout .roadmap-origin { padding-bottom: 9px; color: var(--muted); font-size: 17px; line-height: 1.5; }
@@ -251,7 +247,6 @@
 .evaluation-table th:first-child { width: 108px; }
 .evaluation-table td { padding: 8px 0; border-bottom: 1px solid var(--rule); vertical-align: top; }
 .slidev-layout .evaluation-conditions { margin-top: 12px; color: var(--muted); font-size: 17px; line-height: 1.5; }
-.slidev-layout .research-comparison-note { margin-top: 14px; color: var(--muted); font-size: 17px; line-height: 1.5; }
 
 .slidev-layout .project-timeline { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; margin-top: 26px; padding: 0; list-style: none; }
 .project-timeline li { position: relative; padding-top: 16px; border-top: 1px solid #a8afb6; }
