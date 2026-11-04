@@ -111,6 +111,8 @@
   pointer-events: none;
 }
 
+.school-logo.school-logo-cover { right: auto; left: 64px; }
+
 .deck-footer {
   view-transition-name: llcv-footer;
   position: absolute;
@@ -300,6 +302,10 @@
 ::view-transition-group(*) {
   animation-duration: 340ms;
   animation-timing-function: var(--llcv-motion-ease);
+}
+
+::view-transition-group(llcv-logo) {
+  animation-duration: 520ms;
 }
 
 ::view-transition-old(root) {

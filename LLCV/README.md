@@ -49,7 +49,7 @@ npm run preview
 
 原型完整入口为 [cuberoot.me/zh/alg/photo](https://cuberoot.me/zh/alg/photo)，第五页标题可点击打开。封面采用右侧通高照片背景，按原比例完整显示，以 28% 不透明度叠在白底上；英文提问独立叠加，原始图片文件保持完整。
 
-同济大学校徽使用用户提供的透明 PNG：public/images/tongji-university.png。主体和备用页共用右上角定位，保留原始比例与颜色；校徽与页脚位于封面照片背景之上，页眉与第五页说明文字均避开校徽区域。
+同济大学校徽使用用户提供的透明 PNG：public/images/tongji-university.png。封面放在左上角，第 2 页起与备用页位于右上角，尺寸、比例与颜色一致；支持 View Transitions 时，校徽以 520 ms 的共享元素过渡在封面和第二页之间移动。校徽与页脚位于封面照片背景之上，页眉与第五页说明文字均避开校徽区域。
 
 ## 讲述节奏
 
