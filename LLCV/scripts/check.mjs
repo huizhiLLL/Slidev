@@ -20,7 +20,7 @@ for (const [index, slide] of mainDeck.slides.entries()) {
   duration += Number(seconds[1])
   assert.ok(slide.content.includes(`<DeckFooter page="0${index + 1}"`), '主体页码不一致')
 }
-assert.equal(duration, 420, '讲述预算应为七分钟')
+assert.equal(duration, 450, '讲述预算应为七分三十秒')
 assert.ok(mainDeck.slides[4].content.includes('name="overview"'), '第 5 页必须展示原型主界面')
 assert.ok(mainDeck.slides[5].content.includes('ResearchRoadmap'), '第 6 页必须展示后续工作路线')
 
