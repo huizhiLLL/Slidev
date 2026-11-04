@@ -53,7 +53,7 @@ for (const [path, destination, code] of [
   assert.equal(rule?.destination, destination, `路由目标错误：${path}`)
   assert.equal(rule.code, code)
 }
-for (const path of ['/', '/unknown', '/llcv/assets/index.js', '/llcv/fonts/misans-regular.woff2', '/llcv/images/input-oblique.webp', '/llcv/appendix/assets/index.js']) {
+for (const path of ['/', '/unknown', '/llcv/assets/index.js', '/llcv/fonts/misans-regular.woff2', '/llcv/images/input-oblique.png', '/llcv/appendix/assets/index.js']) {
   assert.equal(match(path), undefined, `真实资源或集合路由被错误重写：${path}`)
 }
 console.log('站点检查通过：首页、主／备用 base、入口资源、三套字体引用、深链规则与静态资源绕过。')

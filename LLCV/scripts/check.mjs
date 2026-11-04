@@ -31,7 +31,7 @@ for (const file of ['misans-regular.woff2', 'misans-semibold.woff2', 'noto-serif
 
 const source = await read('assets.ts')
 const images = [...source.matchAll(/src: '(images\/[^']+)'/g)].map(m => m[1])
-assert.equal(images.length, 5, '应保留五个素材位置')
+assert.equal(images.length, 3, '应使用三张真实素材，原型合并为一张完整截图')
 const present = await readdir(resolve(root, 'public/images'))
 const missing = images.filter(path => !present.includes(path.slice('images/'.length)))
 console.log(`结构检查通过：主体 ${mainDeck.slides.length} 页，备用 ${appendixDeck.slides.length} 页，讲稿预算 ${duration / 60} 分钟。`)

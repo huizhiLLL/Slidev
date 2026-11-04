@@ -146,10 +146,10 @@
 .slidev-layout .cover-title { font-size: 45px; line-height: 1.55; letter-spacing: -0.015em; }
 .slidev-layout .cover-description { margin-top: 29px; font-size: 24px; line-height: 1.65; }
 .slidev-layout .cover-fields { margin-top: 39px; color: var(--muted); font-size: 16px; }
-.cover-photo { height: 466px; }
+.cover-photo { width: 382px; height: 466px; justify-self: end; }
 
 .observation-layout { display: grid; grid-template-columns: 508px 1fr; gap: 60px; margin-top: 29px; }
-.observation-visual .asset-frame { height: 350px; }
+.observation-visual .asset-frame { width: 350px; height: 350px; margin-inline: auto; }
 .slidev-layout .figure-caption { margin-top: 12px; color: var(--muted); font-size: 17px; }
 .lead { font-size: 25px; line-height: 1.65; }
 .observation-equation { display: flex; align-items: baseline; gap: 12px; margin-top: 18px; font-size: 57px; font-weight: 600; line-height: 1.25; }
@@ -182,18 +182,12 @@
 .research-focus > span { padding-top: 7px; color: var(--muted); font-size: 17px; white-space: nowrap; }
 .research-focus p { font-size: 25px; line-height: 1.6; }
 
-.prototype-heading { display: flex; justify-content: space-between; align-items: flex-start; }
-.slidev-layout .prototype-status { margin-top: 25px; text-align: right; font-size: 17px; line-height: 1.7; color: var(--green); }
-.prototype-gallery { display: grid; grid-template-columns: minmax(0, 2.14fr) minmax(0, 1fr); gap: 18px; height: 340px; margin-top: 25px; }
-.prototype-details { display: grid; grid-template-rows: 1fr 1fr; gap: 14px; min-height: 0; }
-.prototype-details .asset-placeholder { padding: 15px; }
-.prototype-details .asset-kind { margin-bottom: 5px; font-size: 13px; }
-.prototype-details .asset-placeholder strong { font-size: 21px; }
-.prototype-details .asset-detail { margin-top: 4px; font-size: 15px; }
-.prototype-details .asset-pending { margin-top: 9px; font-size: 13px; }
-.prototype-summary { margin-top: 22px; }
-.prototype-summary p { font-size: 17px; line-height: 1.7; color: var(--muted); }
-.prototype-summary strong { display: inline-block; margin-right: 20px; color: var(--ink); font-size: 18px; }
+.prototype-gallery { display: grid; grid-template-columns: 576px minmax(0, 1fr); gap: 56px; height: 440px; margin-top: 20px; }
+.prototype-copy { padding-top: 8px; }
+.slidev-layout .prototype-status { font-size: 18px; line-height: 1.7; color: var(--green); }
+.prototype-copy section { margin-top: 26px; }
+.prototype-copy h2 { font-size: 23px; }
+.prototype-copy section p { margin-top: 10px; font-size: 21px; line-height: 1.7; color: var(--muted); }
 
 .research-roadmap { display: grid; grid-template-columns: 280px 1fr; align-items: center; gap: 90px; height: 387px; margin-top: 19px; }
 .roadmap-origin { position: relative; padding: 24px 0; border-top: 2px solid var(--ink); border-bottom: 1px solid var(--rule); }
