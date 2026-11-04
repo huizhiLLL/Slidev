@@ -115,7 +115,7 @@ title: 从局部观测到适用公式
   </section>
 </div>
 
-<p class="boundary-note">候选须完整，执行约定须一致；没有共同公式时，允许校正、补拍或拒识。</p>
+<p class="core-boundary">候选须完整，执行约定须一致；没有共同公式时，允许校正、补拍或拒识。</p>
 <DeckFooter page="03" />
 
 <!--

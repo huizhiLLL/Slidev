@@ -15,8 +15,8 @@ import MathBlock from './MathBlock.vue'
       <h2>局部状态推断</h2>
       <p>颜色 → <strong>Corner / Edge Cubies</strong></p>
       <div class="flow-constraints">
-        <MathBlock expression="\sum_i \mathrm{twist}_i \equiv 0 \pmod{3}" />
-        <MathBlock expression="\sum_i \mathrm{flip}_i \equiv 0 \pmod{2}" />
+        <MathBlock expression="\textstyle\sum_i \mathrm{twist}_i \equiv 0 \pmod{3}" />
+        <MathBlock expression="\textstyle\sum_i \mathrm{flip}_i \equiv 0 \pmod{2}" />
         <span>角块与棱块排列奇偶性一致</span>
       </div>
       <span class="flow-output">输出：合法候选集合 C</span>
